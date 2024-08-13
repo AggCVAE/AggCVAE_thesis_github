@@ -1,0 +1,4 @@
+Pearson correlation coefficient: 0.7757
+Spearman correlation coefficient: 0.7070
+Root Mean Squared Error (RMSE): 0.0343
+Mean Absolute Error (MAE): 0.0254

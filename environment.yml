@@ -1,0 +1,21 @@
+name: aggVAE_env_selena_colab
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pip
+  - shapely=2.0.3
+  - matplotlib
+  - geopandas=0.14.3
+  - pandas=1.5.0
+  - arviz=0.18.0
+  - dill=0.3.8
+  - numpyro=0.14.0
+  - jupyterlab
+  - ca-certificates
+  - certifi
+  - openssl
+  - jax=0.4.25
+  - jaxlib=0.4.25
+  - ipywidgets
+prefix: aggVAE_env_selena_colab
