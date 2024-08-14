@@ -39,8 +39,9 @@ For the models, each notebook follows a similar structure:
    - Calculating 95 % BCI intervals of the posterior distirbution of the estimated HIV prevalence
    - Calculating performance metrics (MAE, RMSE, Pearson's and Spearman's correlation coefficients between observations and predictions)
 
-   
-   
+
+The VAE and CVAE algorithms were trained using a GPU. To run the code on CPU, comment out the line `jax.config.update('jax_platform_name', 'gpu')  # Use GPU, comment out to run on CPU.` at the start of each notebook in the Importing Libraries section.
+
    
 
 
