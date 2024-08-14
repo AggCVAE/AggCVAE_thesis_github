@@ -42,6 +42,9 @@ For the models, each notebook follows a similar structure:
 
 The VAE and CVAE algorithms were trained using a GPU. To run the code on CPU, comment out the line `jax.config.update('jax_platform_name', 'gpu')` at the start of each notebook in the Importing Libraries section.
 
+Alternatively, the trained decoders and MCMC iterations provided in the `decoders` and `MCMC` folders can be used directly to reproduce the findings in the thesis. To do this, the VAE/CVAE training step and MCMC inference should be commented out. This is indicated further in the code.
+
+
    
 
 
