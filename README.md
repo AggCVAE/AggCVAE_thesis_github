@@ -17,10 +17,11 @@ It is recommended that the reader familiarises themselves with the corresponding
 For the models, each notebook follows a similar structure:
 
 1. Importing libraries
-2. Reading shapefiles of boundaries of the administrative units
-3. Reading HIV prevalence data
-4. Merging the shape and prevalence data
-5. Training a VAE/CVAE algorithm with `JAX` (if applicable) 
+2. Set the administrative level (if applicable)
+3. Reading shapefiles of boundaries of the administrative units
+4. Reading HIV prevalence data
+5. Merging the shape and prevalence data
+6. Training a VAE/CVAE algorithm with `JAX` (if applicable) 
    - Defining preliminary functions (covariance matrix of GP, indicator matrix M)
    - Defining the model architecture (model configurations, MLP layers, etc.)
    - Defining the aggregated GP prior to be approximated by the VAE/CVAE with `numpyro`
@@ -28,12 +29,12 @@ For the models, each notebook follows a similar structure:
    - Training the VAE/CVAE
    - Saving the decoder and losses
    - Evaluating how well the VAE/CVAE has learnt from the aggregated GP prior, i.e. comparing aggregated GP prior samples before training and VAE/CVAE approximations after training (spatial maps and 95% BCI intervals)
-6. Defining the HIV prevalence model
-7. Fitting the prevalence model using MCMC inference with `numpyro`
+7. Defining the HIV prevalence model
+8. Fitting the prevalence model using MCMC inference with `numpyro`
    - Saving the MCMC iterations
    - Creating a table of MCMC summary results with Elapsed Time, Average ESS and R-hat statistics
    - Plotting posterior distributions and traceplots of hyperparameters (if applicable)
-9. Analysing model predictions
+10. Analysing model predictions
    - Mapping HIV prevalence spatially
    - Scatterplot of estimated prevalence against observed prevalence
    - Calculating 95 % BCI intervals of the posterior distribution of the estimated HIV prevalence
