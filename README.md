@@ -23,7 +23,7 @@ For the models, each notebook follows a similar structure:
 5. Training a VAE/CVAE algorithm with `JAX` (if applicable) 
    - Defining preliminary functions (covariance matrix of GP, indicator matrix M)
    - Defining the model architecture (model configurations, MLP layers, etc.)
-   - Defining the aggregated GP prior to be approximated by the VAE/CVAE using `numpyro`
+   - Defining the aggregated GP prior to be approximated by the VAE/CVAE with `numpyro`
    - Defining functions needed for training (dataloader, training step, validation step, loss function)
    - Training the VAE/CVAE
    - Saving the decoder and losses
