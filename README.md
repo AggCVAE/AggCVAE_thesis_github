@@ -34,14 +34,14 @@ For the models, each notebook follows a similar structure:
    - Evaluate how well the VAE/CVAE has learnt from the aggregated GP prior, i.e. comparing aggregated GP prior samples before training and VAE/CVAE approximations after training (spatial maps and 95% BCI intervals)
 9. Define the HIV prevalence model
 10. Fit the prevalence model using MCMC inference with `numpyro`
-   - Save the MCMC iterations
-   - Create a table of MCMC summary results with Elapsed Time, Average ESS and R-hat statistics
-   - Plot posterior distributions and traceplots of hyperparameters (if applicable)
+    - Save the MCMC iterations
+    - Create a table of MCMC summary results with Elapsed Time, Average ESS and R-hat statistics
+    - Plot posterior distributions and traceplots of hyperparameters (if applicable)
 11. Analyse model predictions
-   - Map HIV prevalence spatially
-   - Scatterplot of estimated prevalence against observed prevalence
-   - Calculate 95 % BCI intervals of the posterior distribution of the estimated HIV prevalence
-   - Calculate performance metrics (MAE, RMSE, Pearson's and Spearman's correlation coefficients between observations and predictions)
+    - Map HIV prevalence spatially
+    - Scatterplot of estimated prevalence against observed prevalence
+    - Calculate 95 % BCI intervals of the posterior distribution of the estimated HIV prevalence
+    - Calculate performance metrics (MAE, RMSE, Pearson's and Spearman's correlation coefficients between observations and predictions)
 
 
 The VAE and CVAE algorithms were trained using a GPU. To run the code on CPU, comment out the line `jax.config.update('jax_platform_name', 'gpu')` at the start of each notebook in the Importing Libraries section.
