@@ -21,22 +21,22 @@ For the models, each notebook follows a similar structure:
 3. Reading HIV prevalence data
 4. Merging the shape and prevalence data
 5. Training a VAE/CVAE algorithm with `JAX` (if applicable) 
-   a. Defining preliminary functions (covariance matrix of GP, indicator matrix M)
-   b. Defining the model architecture (model configurations, MLP layers, etc.)
-   c. Defining the aggregated GP prior to be approximated by the VAE/CVAE using `numpyro`
-   d. Defining functions needed for training (dataloader, training step, validation step, loss function)
-   e. Training the VAE/CVAE
-   f. Saving the decoder and losses
-   g. Evaluating how well the VAE/CVAE has learnt from the aggregated GP prior, i.e. comparing aggregated GP prior samples before training and VAE/CVAE approximations after training (spatial maps and 95% BCI intervals)
+   - Defining preliminary functions (covariance matrix of GP, indicator matrix M)
+   - Defining the model architecture (model configurations, MLP layers, etc.)
+   - Defining the aggregated GP prior to be approximated by the VAE/CVAE using `numpyro`
+   - Defining functions needed for training (dataloader, training step, validation step, loss function)
+   - Training the VAE/CVAE
+   - Saving the decoder and losses
+   - Evaluating how well the VAE/CVAE has learnt from the aggregated GP prior, i.e. comparing aggregated GP prior samples before training and VAE/CVAE approximations after training (spatial maps and 95% BCI intervals)
 6. Defining the HIV prevalence model
 7. Fitting the prevalence model using MCMC inference with `numpyro`
-   a. Saving the MCMC iterations
-   b. Creating a table of MCMC summary results with Elapsed Time, Average ESS and R-hat statistics
-   c. Plotting posterior distributions and traceplots of hyperparameters (if applicable)
-8. Analysing model predictions
-   a. Mapping HIV prevalence spatially
-   b. Scatterplot of estimated prevalence against observed prevalence
-   c. Calculating performance metrics (MAE, RMSE, Pearson's and Spearman's correlation coefficients between observations and predictions)
+   - Saving the MCMC iterations
+   - Creating a table of MCMC summary results with Elapsed Time, Average ESS and R-hat statistics
+   - Plotting posterior distributions and traceplots of hyperparameters (if applicable)
+9. Analysing model predictions
+   - Mapping HIV prevalence spatially
+   - Scatterplot of estimated prevalence against observed prevalence
+   - Calculating performance metrics (MAE, RMSE, Pearson's and Spearman's correlation coefficients between observations and predictions)
 
    
    
