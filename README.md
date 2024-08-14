@@ -36,6 +36,7 @@ For the models, each notebook follows a similar structure:
 9. Analysing model predictions
    - Mapping HIV prevalence spatially
    - Scatterplot of estimated prevalence against observed prevalence
+   - Calculating 95 % BCI intervals of the posterior distirbution of the estimated HIV prevalence
    - Calculating performance metrics (MAE, RMSE, Pearson's and Spearman's correlation coefficients between observations and predictions)
 
    
